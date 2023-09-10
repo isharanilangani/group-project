@@ -1,17 +1,16 @@
 
 import './App.css';
 
-import Notification from './component/Notification';
+//import Notification from './component/Notification';
 import Loginpage from './pages/Loginpage';
+//import Bot_request from './pages/Bot_request';
 
-import Sidebarcode from './component/Sidebar';
+//import Sidebarcode from './component/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <Notification/>
-      <Loginpage/>
-      <Sidebarcode/>
+     <Loginpage/>
     </div>
   );
 }

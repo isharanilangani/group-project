@@ -17,18 +17,45 @@
     text-align: center;  
 }
 
+.botrequestbox{
+    width: 255px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 81px 0px 0px 81px;
+    background: #495658;
+}
+
+.botrequest{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
 .logoutbox{
+    display: flex;
+    flex-direction: row;
     width: 115px;
     height: 35px;
     flex-shrink: 0;
-    color:#FF0000;
-
+    color:#FF0000;  
 }
 
+.shutdownimg{
+    width: 40px;
+    height: 35px;
+    flex-shrink: 0;
+}
 .logout{
     width: 72px;
     height: 26px;
     flex-shrink: 0;
+}
+
+.logout.p{
     color: #F00;
     font-family: Poppins;
     font-size: 20px;
@@ -36,5 +63,6 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.2px;
-    
+    margin-bottom: 21px;
 }
+

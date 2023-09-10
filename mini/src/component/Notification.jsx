@@ -1,8 +1,9 @@
 import React from 'react'
+import '../css/Notificationbar.css';
 
 export default function () {
   return (
-    <div>
+    <div class='notification'>
      
      
     </div>
