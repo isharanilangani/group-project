@@ -1,6 +1,6 @@
 .Sidebarstyle{
     width: 255px;
-    height: 982px;
+    height: 100%;
     flex-shrink: 0;
     background-color: #363740;
     display: flex;
@@ -190,7 +190,7 @@
     background: #363740;
     display: flex;
     flex-direction: row;
-    margin-top: 540px;
+    margin-top: 296px;
     margin-left: 43px;
 }
 
