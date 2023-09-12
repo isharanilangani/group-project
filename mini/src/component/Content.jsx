@@ -1,21 +1,11 @@
 import React from 'react'
-import Navigation from '../component/Navigationbar.jsx';
-import Sidebarcode from '../component/Sidebar.jsx';
-import '../css/Bot_request.css';
+
+import '../css/Content.css';
 import right from '../images/right.png';
 import wrong from '../images/wrong.png';
 
-export default function Bot_request() {
+export default function Content() {
   return (
-    <div class='fullpage'>
-     <div  >
-       <Sidebarcode/>
-     </div>
-    <div class='bars'>
-      <div>
-      <Navigation/>
-      </div>
-    
     <div class='content'>
         <table>
             <tr class='title' >
@@ -89,8 +79,5 @@ export default function Bot_request() {
         </table>
       
     </div>
-    </div>
-    </div>
-   
   )
 }

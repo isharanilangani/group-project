@@ -1,11 +1,10 @@
 .navigation{
-    width: 1275px;
+    width: 1257px;
     height: 130px;
     flex-shrink: 0;
     background-color: #C4CECE;
     display: flex;
-    flex-direction: row;
-    margin-left: 255px;
+    flex-direction: row; 
     
 }
 
