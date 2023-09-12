@@ -3,10 +3,11 @@
     height: 982px;
     flex-shrink: 0;
     background-color: #363740;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
-.admintext{
+.admin{
     color: #FFF;
     font-family: Poppins;
     font-size: 47px;
@@ -14,7 +15,10 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.2px;
-    text-align: center;  
+    margin-top: 36px;
+    margin-left: 46px;
+    width: 163px;
+    height: 71px;
 }
 
 .botrequestbox{
@@ -23,6 +27,9 @@
     flex-shrink: 0;
     border-radius: 81px 0px 0px 81px;
     background: #495658;
+    margin-top: -23px;  
+    display: flex;
+    flex-direction: row;
 }
 
 .botrequest{
@@ -33,29 +40,172 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.2px;
+    width: 104px;
+    height: 24px;
+    margin-top: 19px;
+    margin-left: 26px;
+}
+
+.botrequesticon{
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    border-radius: 44px;
+    margin-top: 19px;
+    margin-left: 33px;
+}
+
+.booksbox{
+    width: 255px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #363740;
+    display: flex;
+    flex-direction: row;
+}
+
+.bookicon{
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.books{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 50px;
+    height: 24px;
+}
+
+.userbox{
+    width: 255px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #363740;
+    display: flex;
+    flex-direction: row;
+}
+
+.usericon{
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.users{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 24px;
+    height: 24px;
+}
+
+.checkbox{
+    width: 255px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #363740;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkicon{
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.checkinout{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 114px;
+    height: 24px;
+}
+
+.settingbox{
+    width: 255px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #363740;
+    display: flex;
+    flex-direction: row;
+}
+
+.settingicon{
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.settings{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 69px;
+    height: 24px;
 }
 
 .logoutbox{
-    display: flex;
-    flex-direction: row;
     width: 115px;
     height: 35px;
     flex-shrink: 0;
-    color:#FF0000;  
+    background: #363740;
+    display: flex;
+    flex-direction: row;
+    margin-top: 540px;
+    margin-left: 43px;
 }
 
-.shutdownimg{
+.logouticon{
     width: 40px;
     height: 35px;
     flex-shrink: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
 }
+
 .logout{
     width: 72px;
     height: 26px;
     flex-shrink: 0;
-}
-
-.logout.p{
     color: #F00;
     font-family: Poppins;
     font-size: 20px;
@@ -63,6 +213,6 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.2px;
-    margin-bottom: 21px;
+    margin-top: 5px;
+    margin-left: 0px;
 }
-
