@@ -13,8 +13,8 @@ export default function Loginpage() {
         <img src={liblogo} alt='logo' class='image'/>
         <p class='admin'>Admin</p>
         <form class='form'>
-        <input type="text" class="username" name="User Name"/>  
-        <input  type="Password" class="password" name="Pass Word"/>
+        <input type="text" class="username" name="User Name" value=' Username'/>  
+        <input  type="Password" class="password" name="Pass Word" value='Password'/>
           <button type="submit" class='submit' onclick="document.getElementById('Bot_request.jsx').innerHTML = Date()">
             Submit
           </button>

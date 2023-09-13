@@ -1,17 +1,17 @@
 
 import './App.css';
 
-//import Navigation from './component/Navigationbar';
+// Navigation from './component/Navigationbar';
 //import Loginpage from './pages/Loginpage';
-import Bot_request from './pages/Bot_request';
+//import Bot_requestcode from './pages/Bot_request';
 //import Sidebarcode from './component/Sidebar';
 //import Content from './component/Content';
+import Bookpage from './pages/Book';
 
 function App() {
   return (
     <div className="App">
-     
-    <Bot_request/>
+    <Bookpage/> 
     </div>
   );
 }
