@@ -107,8 +107,8 @@ export default function Book() {
             </tr>   
 
         </table>
-        <button class='newbook'>New Book</button>
-      
+           <button class='newbook'>New Book</button>
+    
     </div>
         </div>
     </div>

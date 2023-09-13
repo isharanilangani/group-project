@@ -6,12 +6,13 @@ import './App.css';
 //import Bot_requestcode from './pages/Bot_request';
 //import Sidebarcode from './component/Sidebar';
 //import Content from './component/Content';
-import Bookpage from './pages/Book';
+//import Bookpage from './pages/Book';
+import Bookupdatepage from './pages/Book_update';
 
 function App() {
   return (
     <div className="App">
-    <Bookpage/> 
+    <Bookupdatepage/> 
     </div>
   );
 }
