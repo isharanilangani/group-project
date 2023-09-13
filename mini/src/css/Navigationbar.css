@@ -4,8 +4,7 @@
     flex-shrink: 0;
     background-color: #C4CECE;
     display: flex;
-    flex-direction: row; 
-    
+    flex-direction: row;    
 }
 
 .Searchicon{

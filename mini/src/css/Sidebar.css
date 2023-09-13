@@ -21,10 +21,21 @@
     height: 71px;
 }
 
-.botrequestbox{
+button{
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
     width: 255px;
     height: 56px;
     flex-shrink: 0;
+}
+
+.botrequestbox{
     border-radius: 81px 0px 0px 81px;
     background: #495658;
     margin-top: -23px;  
@@ -33,13 +44,6 @@
 }
 
 .botrequest{
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.2px;
     width: 104px;
     height: 24px;
     margin-top: 19px;
@@ -56,9 +60,6 @@
 }
 
 .booksbox{
-    width: 255px;
-    height: 56px;
-    flex-shrink: 0;
     border-radius: 28px;
     background: #363740;
     display: flex;
@@ -73,14 +74,7 @@
     margin-left: 32px;
 }
 
-.books{
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.2px;
+.books{  
     margin-top: 20px;
     margin-left: 30px;
     width: 50px;
@@ -88,9 +82,6 @@
 }
 
 .userbox{
-    width: 255px;
-    height: 56px;
-    flex-shrink: 0;
     border-radius: 28px;
     background: #363740;
     display: flex;
@@ -106,13 +97,6 @@
 }
 
 .users{
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.2px;
     margin-top: 20px;
     margin-left: 30px;
     width: 24px;
@@ -120,9 +104,6 @@
 }
 
 .checkbox{
-    width: 255px;
-    height: 56px;
-    flex-shrink: 0;
     border-radius: 28px;
     background: #363740;
     display: flex;
@@ -138,13 +119,6 @@
 }
 
 .checkinout{
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.2px;
     margin-top: 20px;
     margin-left: 30px;
     width: 114px;
@@ -170,13 +144,6 @@
 }
 
 .settings{
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.2px;
     margin-top: 20px;
     margin-left: 30px;
     width: 69px;

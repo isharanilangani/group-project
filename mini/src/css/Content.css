@@ -1,10 +1,12 @@
 .content{
-    width: 1257px;
-    height: 852px;
+    width: 1256.5px;
+    height: 612.79px;
     flex-shrink: 0;
     background-color: #495658; 
     display: flex;
     flex-direction: column;
+    margin-top: 130px;
+    margin-left: 255px;
 }
 
 table{
@@ -13,7 +15,8 @@ table{
    margin-right: 25px;
    margin-top: 28px;
    width: 1207px;
-   border-collapse: collapse;
+   border-collapse: separate;
+   border-spacing: 0 21px;
 }
 
 #users{
