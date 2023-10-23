@@ -13,8 +13,13 @@ export default function Loginpage() {
         <img src={liblogo} alt='logo' class='image'/>
         <p class='admin'>Admin</p>
         <form class='form'>
+<<<<<<< Updated upstream:mini/src/pages/Loginpage.jsx
         <input type="text" class="username" name="User Name" value=' Username'/>  
         <input  type="Password" class="password" name="Pass Word" value='Password'/>
+=======
+        <input type="text" class="username" placeholder='Username' />  
+        <input  type="Password" class="password" placeholder='Password' />
+>>>>>>> Stashed changes:src/pages/Loginpage.jsx
           <button type="submit" class='submit' onclick="document.getElementById('Bot_request.jsx').innerHTML = Date()">
             Submit
           </button>

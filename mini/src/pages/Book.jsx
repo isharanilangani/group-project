@@ -105,10 +105,13 @@ export default function Book() {
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
                 </td>
             </tr>   
-
         </table>
+<<<<<<< Updated upstream:mini/src/pages/Book.jsx
            <button class='newbook'>New Book</button>
     
+=======
+        <button type="submit" class="submit">New Book</button>
+>>>>>>> Stashed changes:src/pages/Book.jsx
     </div>
         </div>
     </div>
