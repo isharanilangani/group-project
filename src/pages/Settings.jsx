@@ -18,10 +18,34 @@ export default function Settings() {
       </div>
       <div class="content">
         <h1>Security</h1>
-        <div class="FA">
-            <Toggle/>   <h5>Two Factor Authentication (2FA)</h5>
-       
+        <table>
+            <tr>
+                <td><Toggle/></td>
+                <td class="FA">Two Factor Authentication (2FA)</td>
+            </tr>  
+        </table>
+        <table>
+          <tr>
+            <input type="text" placeholder='Recovery email' class="inputemail"/>
+            <button type="submit" class="verify"> Verify</button>
+          </tr>
+        </table>
+        <hr/>
+        <h1>Credentials</h1>
+        <div class="credentials">
+          <div class="email">
+            <input type="text" placeholder='Email' id="updatepart"/>
+            <input type="password" placeholder='Password' id="updatepart"/>
+            <button type="submit" id="confirmpart">Update</button>
+          </div>
+          <div class="password">
+            <input type="password" placeholder='Current password' id="updatepart" />
+            <input type="password" placeholder='Newpassword' id="updatepart" />
+            <input type="password" placeholder='Confirm New Password' id="updatepart"/>
+            <button type="submit" id="confirmpart">Update</button>
+          </div>
         </div>
+        
       </div>
     </div>
     </div>
