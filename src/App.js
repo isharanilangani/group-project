@@ -7,7 +7,7 @@ import './App.css';
 // import Sidebarcode from './component/Sidebar';
 // import Content from './component/Content';
 import Bookpage from './pages/Book';
-//import Model from './component/Model';
+//import Modal from './component/Modal';
 //import User from './pages/User';
 //import Check from './pages/Check_in_out';
 //import Settings from './pages/Settings';
@@ -18,7 +18,6 @@ function App() {
     <div className="App">
     <Bookpage/> 
     
-   
     </div>
   );
 }

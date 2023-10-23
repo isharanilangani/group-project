@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react';
+import { useState } from 'react';
 
 import '../css/Book.css';
 import '../css/Content.css';
@@ -6,20 +7,20 @@ import Navigation from '../component/Navigationbar.jsx';
 import Sidebarcode from '../component/Sidebar.jsx';
 import right from '../images/right.png';
 import wrong from '../images/wrong.png';
-import Model from '../component/Model';
+import Modal from '../component/Modal';
 
 export default function Book() {
-    const {Modelopen , setModelopen} = useState(false);
+    const {Modalopen , setModalOpen} = useState(false);
 
     const handleButtonClick = () => {
-        setModelopen(false);
+        setModalOpen(false);
     };
 
 
   return (
     <div className='fullpage'>
-        {Modelopen &&(
-        <Model onSubmit={handleButtonClick}/>
+        {Modalopen &&(
+        <Modal onSubmit={handleButtonClick}/>
         )}
       <div>
             <Sidebarcode/>
@@ -45,7 +46,7 @@ export default function Book() {
                 <td>religious</td>
                 <td>Sinhala</td>
                 <td class='button'>
-                    <button class='accept' onClick={() => setModelopen(true)}>
+                    <button class='accept' onClick={() => setModalOpen(true)}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -58,7 +59,7 @@ export default function Book() {
                 <td>Novel</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={() => setModelopen(true)}>
+                <button class='accept' onClick={() => setModalOpen(true)}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -71,7 +72,7 @@ export default function Book() {
                 <td>Novel</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={() => setModelopen(true)}>
+                <button class='accept' onClick={() => setModalOpen(true)}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -84,7 +85,7 @@ export default function Book() {
                 <td>Cooking</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={() => setModelopen(true)}>
+                <button class='accept' onClick={() => setModalOpen(true)}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -97,7 +98,7 @@ export default function Book() {
                 <td>kids books</td>
                 <td>English</td>
                 <td>
-                <button class='accept' onClick={() => setModelopen(true)} >
+                <button class='accept' onClick={() => setModalOpen(true)} >
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -110,7 +111,7 @@ export default function Book() {
                 <td>Novel</td>
                 <td>English</td>
                 <td>
-                <button class='accept' onClick={() => setModelopen(true)} >
+                <button class='accept'  >
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -118,7 +119,7 @@ export default function Book() {
             </tr>   
 
         </table>
-        <button class="newbook" onClick={() => setModelopen(true)} >New Book</button>
+        <button class="newbook" onClick={() => setModalOpen(true)} >New Book</button>
 
        </div>
 </div>

@@ -1,11 +1,11 @@
 import React from 'react'
 
-import '../css/Model.css';
+import '../css/Modal.css';
 
-const Model = (onSubmit,onClose) => {
+const Modal = (onSubmit,onClose) => {
   return (
-    <div class='model' onClick={() => onClose()}>
-        <div class="model-container" >
+    <div class='modal' onClick={() => onClose()}>
+        <div class="modal-container" >
             <div class='first'>
                 <div class='name'>
                     <lable>Book Name</lable>
@@ -31,6 +31,6 @@ const Model = (onSubmit,onClose) => {
   )
 }
 
-export default Model
+export default Modal
 
 

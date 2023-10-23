@@ -1,4 +1,4 @@
-.model{
+.modal{
     position: fixed;
     left: 0;
     top: 0;
@@ -11,7 +11,7 @@
     backdrop-filter: blur(5px);   
 }
 
-.model-container{
+.modal-container{
     width: 400px;
     height: 350px;
     flex-shrink: 0;
