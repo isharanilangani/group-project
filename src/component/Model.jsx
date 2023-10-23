@@ -1,11 +1,11 @@
 import React from 'react'
 
-import '../css/Popup.css';
+import '../css/Model.css';
 
-const Popup = ({onclose}) => {
+const Model = (onSubmit,onClose) => {
   return (
-    <div class='popup'>
-        <div class="popup-content">
+    <div class='model' onClick={() => onClose()}>
+        <div class="model-container" >
             <div class='first'>
                 <div class='name'>
                     <lable>Book Name</lable>
@@ -23,7 +23,7 @@ const Popup = ({onclose}) => {
                 </div>
             </div>
             <div class='second'>   
-            <button  class="submit-button" onClick={onclose}>Submit</button>   
+            <button  class="submit-button" onClick={() => onSubmit()}> Submit</button>   
             </div> 
         </div>
       
@@ -31,5 +31,6 @@ const Popup = ({onclose}) => {
   )
 }
 
-export default Popup
+export default Model
+
 

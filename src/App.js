@@ -7,7 +7,7 @@ import './App.css';
 // import Sidebarcode from './component/Sidebar';
 // import Content from './component/Content';
 import Bookpage from './pages/Book';
-//import Popup from './component/Popup';
+//import Model from './component/Model';
 //import User from './pages/User';
 //import Check from './pages/Check_in_out';
 //import Settings from './pages/Settings';

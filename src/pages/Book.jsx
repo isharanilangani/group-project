@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, {useState} from 'react'
 
 import '../css/Book.css';
 import '../css/Content.css';
@@ -7,25 +6,22 @@ import Navigation from '../component/Navigationbar.jsx';
 import Sidebarcode from '../component/Sidebar.jsx';
 import right from '../images/right.png';
 import wrong from '../images/wrong.png';
-import Popup from '../component/Popup';
+import Model from '../component/Model';
 
-const Book = () => {
-    const [isPopupOpen, setIsPopupOpen] = useState(false);
-  
-    const openPopup = () => {
-      setIsPopupOpen(true);
-    };
-  
-    const closePopup = () => {
-      setIsPopupOpen(false);
+export default function Book() {
+    const {Modelopen , setModelopen} = useState(false);
+
+    const handleButtonClick = () => {
+        setModelopen(false);
     };
 
 
   return (
-    <div class='fullpage'>
-        <Popup/>
-        
-        <div>
+    <div className='fullpage'>
+        {Modelopen &&(
+        <Model onSubmit={handleButtonClick}/>
+        )}
+      <div>
             <Sidebarcode/>
         </div>
         <div class='bars'>
@@ -49,7 +45,7 @@ const Book = () => {
                 <td>religious</td>
                 <td>Sinhala</td>
                 <td class='button'>
-                    <button class='accept' onClick={openPopup}>
+                    <button class='accept' onClick={() => setModelopen(true)}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -62,7 +58,7 @@ const Book = () => {
                 <td>Novel</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={openPopup}>
+                <button class='accept' onClick={() => setModelopen(true)}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -75,7 +71,7 @@ const Book = () => {
                 <td>Novel</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={openPopup}>
+                <button class='accept' onClick={() => setModelopen(true)}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -88,7 +84,7 @@ const Book = () => {
                 <td>Cooking</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={openPopup}>
+                <button class='accept' onClick={() => setModelopen(true)}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -101,7 +97,7 @@ const Book = () => {
                 <td>kids books</td>
                 <td>English</td>
                 <td>
-                <button class='accept' onClick={openPopup}>
+                <button class='accept' onClick={() => setModelopen(true)} >
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -114,7 +110,7 @@ const Book = () => {
                 <td>Novel</td>
                 <td>English</td>
                 <td>
-                <button class='accept' onClick={openPopup}>
+                <button class='accept' onClick={() => setModelopen(true)} >
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -122,12 +118,10 @@ const Book = () => {
             </tr>   
 
         </table>
-        <button class="newbook" onClick={openPopup} >New Book</button>
-        {isPopupOpen && <Popup onClose={closePopup} />}
-    </div>
-        </div>
-    </div>
+        <button class="newbook" onClick={() => setModelopen(true)} >New Book</button>
+
+       </div>
+</div>
+</div>
   )
 }
-
-export default Book;
