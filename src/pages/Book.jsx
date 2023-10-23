@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 
 import '../css/Book.css';
 import '../css/Content.css';
@@ -6,11 +7,24 @@ import Navigation from '../component/Navigationbar.jsx';
 import Sidebarcode from '../component/Sidebar.jsx';
 import right from '../images/right.png';
 import wrong from '../images/wrong.png';
+import Popup from '../component/Popup';
 
-export default function Book() {
-    
+const Book = () => {
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+  
+    const openPopup = () => {
+      setIsPopupOpen(true);
+    };
+  
+    const closePopup = () => {
+      setIsPopupOpen(false);
+    };
+
+
   return (
     <div class='fullpage'>
+        <Popup/>
+        
         <div>
             <Sidebarcode/>
         </div>
@@ -35,7 +49,7 @@ export default function Book() {
                 <td>religious</td>
                 <td>Sinhala</td>
                 <td class='button'>
-                    <button class='accept'>
+                    <button class='accept' onClick={openPopup}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -48,7 +62,7 @@ export default function Book() {
                 <td>Novel</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept'>
+                <button class='accept' onClick={openPopup}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -61,7 +75,7 @@ export default function Book() {
                 <td>Novel</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept'>
+                <button class='accept' onClick={openPopup}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -74,7 +88,7 @@ export default function Book() {
                 <td>Cooking</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept'>
+                <button class='accept' onClick={openPopup}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -87,7 +101,7 @@ export default function Book() {
                 <td>kids books</td>
                 <td>English</td>
                 <td>
-                <button class='accept'>
+                <button class='accept' onClick={openPopup}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -100,7 +114,7 @@ export default function Book() {
                 <td>Novel</td>
                 <td>English</td>
                 <td>
-                <button class='accept'>
+                <button class='accept' onClick={openPopup}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
@@ -108,9 +122,12 @@ export default function Book() {
             </tr>   
 
         </table>
-
+        <button class="newbook" onClick={openPopup} >New Book</button>
+        {isPopupOpen && <Popup onClose={closePopup} />}
     </div>
         </div>
     </div>
   )
 }
+
+export default Book;
