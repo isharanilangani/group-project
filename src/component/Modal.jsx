@@ -1,10 +1,11 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import '../css/Modal.css';
 
-const Modal = (onSubmit,onClose) => {
+export const Modal=({openmodal,setOpenModal}) => {
+    const [input,setInput] = useState("");
+
   return (
-    <div class='modal' onClick={() => onClose()}>
+    <div class='modal'>
         <div class="modal-container" >
             <div class='first'>
                 <div class='name'>
@@ -15,15 +16,17 @@ const Modal = (onSubmit,onClose) => {
                     <lable>Language</lable>
                 </div>
                 <div class='block'>
-                    <input type='text'/>
-                    <input type='text'/>
-                    <input type='text'/>
-                    <input type='text'/>
-                    <input type='text'/>
+                    <input type='text' onChange={(event) => setInput(input)}/>
+                    <input type='text' onChange={(input) => setInput(input)}/>
+                    <input type='text'onChange={(input) => setInput(input)}/>
+                    <input type='text'onChange={(input) => setInput(input)}/>
+                    <input type='text'onChange={(input) => setInput(input)}/>
                 </div>
             </div>
             <div class='second'>   
-            <button  class="submit-button" onClick={() => onSubmit()}> Submit</button>   
+            <button  class="submit-button" onClick={() =>{
+                setOpenModal(false);
+            }}> Submit</button>   
             </div> 
         </div>
       
@@ -32,5 +35,6 @@ const Modal = (onSubmit,onClose) => {
 }
 
 export default Modal
+
 
 

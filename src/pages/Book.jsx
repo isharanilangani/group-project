@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react'
 
 import '../css/Book.css';
 import '../css/Content.css';
@@ -7,21 +6,14 @@ import Navigation from '../component/Navigationbar.jsx';
 import Sidebarcode from '../component/Sidebar.jsx';
 import right from '../images/right.png';
 import wrong from '../images/wrong.png';
+
 import Modal from '../component/Modal';
 
 export default function Book() {
-    const {Modalopen , setModalOpen} = useState(false);
 
-    const handleButtonClick = () => {
-        setModalOpen(false);
-    };
-
-
+    const [openmodal,setOpenModal] = useState(false);
   return (
     <div className='fullpage'>
-        {Modalopen &&(
-        <Modal onSubmit={handleButtonClick}/>
-        )}
       <div>
             <Sidebarcode/>
         </div>
@@ -46,9 +38,12 @@ export default function Book() {
                 <td>religious</td>
                 <td>Sinhala</td>
                 <td class='button'>
-                    <button class='accept' onClick={() => setModalOpen(true)}>
+                    <button class='accept' onClick={() =>{
+            setOpenModal(true);
+        }}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
+                    {openmodal && <Modal openmodal={openmodal} setOpenModal={setOpenModal}/>}
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
                 </td>
             </tr>
@@ -59,9 +54,12 @@ export default function Book() {
                 <td>Novel</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={() => setModalOpen(true)}>
+                <button class='accept' onClick={() =>{
+            setOpenModal(true);
+        }}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
+                    {openmodal && <Modal openmodal={openmodal} setOpenModal={setOpenModal}/>}
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
                 </td>
             </tr>
@@ -72,9 +70,12 @@ export default function Book() {
                 <td>Novel</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={() => setModalOpen(true)}>
+                <button class='accept'onClick={() =>{
+            setOpenModal(true);
+        }} >
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
+                    {openmodal && <Modal openmodal={openmodal} setOpenModal={setOpenModal}/>}
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
                 </td>
             </tr>
@@ -85,9 +86,12 @@ export default function Book() {
                 <td>Cooking</td>
                 <td>Sinhala</td>
                 <td>
-                <button class='accept' onClick={() => setModalOpen(true)}>
+                <button class='accept' onClick={() =>{
+            setOpenModal(true);
+        }}>
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
+                    {openmodal && <Modal openmodal={openmodal} setOpenModal={setOpenModal}/>}
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
                 </td>
             </tr>
@@ -98,9 +102,12 @@ export default function Book() {
                 <td>kids books</td>
                 <td>English</td>
                 <td>
-                <button class='accept' onClick={() => setModalOpen(true)} >
+                <button class='accept' onClick={() =>{
+            setOpenModal(true);
+        }} >
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
+                    {openmodal && <Modal openmodal={openmodal} setOpenModal={setOpenModal}/>}
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
                 </td>
             </tr>   
@@ -111,18 +118,28 @@ export default function Book() {
                 <td>Novel</td>
                 <td>English</td>
                 <td>
-                <button class='accept'  >
+                <button class='accept' onClick={() =>{
+            setOpenModal(true);
+        }} >
                         <img src={right} alt='right' class='imageright'/>  Update</button>
                     <button class='ignore'>
+                    {openmodal && <Modal openmodal={openmodal} setOpenModal={setOpenModal}/>}
                     <img src={wrong} alt='wrong' class='imagewrong'/> Delete</button>
                 </td>
             </tr>   
 
         </table>
-        <button class="newbook" onClick={() => setModalOpen(true)} >New Book</button>
+        <button class="open-modal-button" onClick={() =>{
+            setOpenModal(true);
+        }} >New Book</button>
+        {openmodal && <Modal openmodal={openmodal} setOpenModal={setOpenModal}/>}
 
        </div>
 </div>
 </div>
   )
 }
+
+
+
+
