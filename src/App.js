@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter , Routes, Route  } from 'react-router-dom';
 import './App.css';
 
 // import Navigation from './component/Navigationbar';
@@ -23,7 +23,7 @@ function App() {
         <Route path="/Bookpage" element={<Bookpage/>}/>
         <Route path="/User" element={<User/>}/>
         <Route path="/Check" element={<Check/>}/>
-        <Route path="/Settings" element={<Settings/>}/>
+        <Route path="/Settings" element={<Settings/>}/> 
         
       </Routes>
       </BrowserRouter> 

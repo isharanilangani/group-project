@@ -5,6 +5,7 @@ import Contentcode from '../component/Content.jsx';
 import '../css/Bot_request.css';
 import '../css/Content.css';
 
+
 export default function Bot_request() {
   return (
   <div class='fullpage'>
