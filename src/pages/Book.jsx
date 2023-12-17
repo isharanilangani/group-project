@@ -13,7 +13,7 @@ export default function Book() {
 
     const [openmodal,setOpenModal] = useState(false);
   return (
-    <div className='fullpage'>
+    <div className='fullpage' >
       <div>
             <Sidebarcode/>
         </div>
@@ -133,7 +133,6 @@ export default function Book() {
             setOpenModal(true);
         }} >New Book</button>
         {openmodal && <Modal openmodal={openmodal} setOpenModal={setOpenModal}/>}
-
        </div>
 </div>
 </div>
